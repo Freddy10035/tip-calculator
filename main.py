@@ -79,3 +79,19 @@
 # Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
 
 # Write your code below this line 👇
+
+print("Welcome to the tip calculator")
+bill = input("What was the total bill? KES")
+bill_as_float = float(bill)
+
+percentage_input = input("What percentage would you like to give? 10, 12 or 15? ")
+percentage_input_as_int = int(percentage_input)
+
+num_people = input("How many people to split the bill? ")
+num_people_as_int = int(num_people)
+
+total_bill = bill_as_float + (bill_as_float* (percentage_input_as_int/100))
+
+amount_to_be_paid_rounded = round(total_bill/num_people_as_int, 2)
+
+print(f"Each person should pay: KES{amount_to_be_paid_rounded}")
