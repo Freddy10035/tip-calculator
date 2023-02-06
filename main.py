@@ -92,6 +92,7 @@ num_people_as_int = int(num_people)
 
 total_bill = bill_as_float + (bill_as_float* (percentage_input_as_int/100))
 
-amount_to_be_paid_rounded = round(total_bill/num_people_as_int, 2)
+# amount_to_be_paid_rounded = round(total_bill/num_people_as_int, 2)
+amount_to_be_paid = "{:.2f}".format(total_bill/num_people_as_int)
 
-print(f"Each person should pay: KES{amount_to_be_paid_rounded}")
+print(f"Each person should pay: KES{amount_to_be_paid}")
